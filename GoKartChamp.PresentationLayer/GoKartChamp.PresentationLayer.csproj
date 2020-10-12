@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3CA79FD6-184A-4FCA-B8FC-D164662180D5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>GoKartChamp.PresentationLayer</RootNamespace>
+    <AssemblyName>GoKartChamp.PresentationLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="formAddDriver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAddDriver.Designer.cs">
+      <DependentUpon>formAddDriver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formAddRace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAddRace.Designer.cs">
+      <DependentUpon>formAddRace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formAddTrack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAddTrack.Designer.cs">
+      <DependentUpon>formAddTrack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formEditDriver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formEditDriver.Designer.cs">
+      <DependentUpon>formEditDriver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formEditRace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formEditRace.Designer.cs">
+      <DependentUpon>formEditRace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formEditTrack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formEditTrack.Designer.cs">
+      <DependentUpon>formEditTrack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formEnterResults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formEnterResults.Designer.cs">
+      <DependentUpon>formEnterResults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formMainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formMainWindow.Designer.cs">
+      <DependentUpon>formMainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formShowRaceResults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formShowRaceResults.Designer.cs">
+      <DependentUpon>formShowRaceResults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formViewDrivers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formViewDrivers.Designer.cs">
+      <DependentUpon>formViewDrivers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formViewFinishedRaces.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formViewFinishedRaces.Designer.cs">
+      <DependentUpon>formViewFinishedRaces.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formViewStandings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formViewStandings.Designer.cs">
+      <DependentUpon>formViewStandings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formViewTracks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formViewTracks.Designer.cs">
+      <DependentUpon>formViewTracks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowFormsFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="formViewUpcomingRaces.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formViewUpcomingRaces.Designer.cs">
+      <DependentUpon>formViewUpcomingRaces.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="formAddDriver.resx">
+      <DependentUpon>formAddDriver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formAddRace.resx">
+      <DependentUpon>formAddRace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formAddTrack.resx">
+      <DependentUpon>formAddTrack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formEditDriver.resx">
+      <DependentUpon>formEditDriver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formEditRace.resx">
+      <DependentUpon>formEditRace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formEditTrack.resx">
+      <DependentUpon>formEditTrack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formEnterResults.resx">
+      <DependentUpon>formEnterResults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formMainWindow.resx">
+      <DependentUpon>formMainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formShowRaceResults.resx">
+      <DependentUpon>formShowRaceResults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formViewDrivers.resx">
+      <DependentUpon>formViewDrivers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formViewFinishedRaces.resx">
+      <DependentUpon>formViewFinishedRaces.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formViewStandings.resx">
+      <DependentUpon>formViewStandings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formViewTracks.resx">
+      <DependentUpon>formViewTracks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formViewUpcomingRaces.resx">
+      <DependentUpon>formViewUpcomingRaces.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GoKartChamp.BaseLib\GoKartChamp.BaseLib.csproj">
+      <Project>{4be0d8c6-e86f-48ad-89ae-677b87d0f49f}</Project>
+      <Name>GoKartChamp.BaseLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GoKartChamp.Controllers\GoKartChamp.Controllers.csproj">
+      <Project>{d6c63fa9-05a7-454a-90dc-12ba7381214f}</Project>
+      <Name>GoKartChamp.Controllers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GoKartChamp.MemBasedDAL\GoKartChamp.MemBasedDAL.csproj">
+      <Project>{c64e9142-44b7-466c-808c-8e388599f736}</Project>
+      <Name>GoKartChamp.MemBasedDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GoKartChamp.Model\GoKartChamp.Model.csproj">
+      <Project>{500cec0d-4663-4fe3-9cf6-8a68a1d0f22e}</Project>
+      <Name>GoKartChamp.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

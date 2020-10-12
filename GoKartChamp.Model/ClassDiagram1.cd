@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GoKartChamp.Model.Driver">
+    <Position X="12.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAgAAAIAAAAAAAAAAAAAAgAAAAAAAAAAg=</HashCode>
+      <FileName>Driver.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoKartChamp.Model.Race">
+    <Position X="16.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAgAAAAAQAAAQACAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Race.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Track" />
+      <Property Name="Results" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GoKartChamp.Model.RaceResults">
+    <Position X="14" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAQAAAAAAA=</HashCode>
+      <FileName>RaceResults.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="FastestLap" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="_positions" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="GoKartChamp.Model.Standings">
+    <Position X="10.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Standings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoKartChamp.Model.Track">
+    <Position X="16.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAIAAARAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Track.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoKartChamp.Model.Factories.DriverFactory">
+    <Position X="12.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Factories\DriverFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoKartChamp.Model.Factories.RaceFactory">
+    <Position X="16.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Factories\RaceFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoKartChamp.Model.Factories.TrackFactory">
+    <Position X="16.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Factories\TrackFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="GoKartChamp.Model.Repositories.IDriverRepository">
+    <Position X="10.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAgAAQAAIAAAABABQAAAAQAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Repositories\IDriverRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GoKartChamp.Model.Repositories.IRaceRepository">
+    <Position X="18.75" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAICIAAAAAAABARAABAQAAAAAAAAAAAAQAAAAgAAA=</HashCode>
+      <FileName>Repositories\IRaceRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GoKartChamp.Model.Repositories.ITrackRepository">
+    <Position X="18.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAQAAAAAAACAAQIAAAAAAACABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\ITrackRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
